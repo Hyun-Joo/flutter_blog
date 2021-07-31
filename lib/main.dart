@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blog/pages/post/home_page.dart';
 import 'package:flutter_blog/pages/user/join_page.dart';
-import 'package:flutter_blog/pages/user/login_page.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -14,8 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // 라우트 설계 불필요
-      home: JoinPage(),
+      // 라우트 설계 불필요 (GetX 사용 예정)
+      home: JoinPage()
     );
   }
 }

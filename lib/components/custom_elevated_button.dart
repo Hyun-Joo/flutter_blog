@@ -4,7 +4,6 @@ class CustomElevatedButton extends StatelessWidget {
   final String text;
   final funPageRoute;
 
-
   const CustomElevatedButton({required this.text, required this.funPageRoute});
 
   @override
