@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blog/constants/size.dart';
+import 'package:flutter_blog/pages/post/detail_page.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,9 +10,21 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: _navigation(context),
       appBar: AppBar(),
-      body: Center(
-        child: Text('Home Page')
-      ),
+      body: ListView.separated(
+        itemCount: 5,
+        itemBuilder: (context, index) {
+          return ListTile(
+            onTap: () {
+              Get.to(DetailPage(index), arguments: '데이터');
+            },
+            title: Text('제목$index'),
+            leading: Text('$index')
+          );
+        },
+        separatorBuilder: (context, index) {
+          return Divider();
+        }
+      )
     );
   }
 
