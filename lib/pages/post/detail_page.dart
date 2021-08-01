@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class DetailPage extends StatelessWidget {
   final int id;
@@ -8,12 +7,11 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String data = Get.arguments;
-
+    //String data = Get.arguments;
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('Detail Page $id $data'),
+        child: Text('Detail Page $id'),
       )
     );
   }

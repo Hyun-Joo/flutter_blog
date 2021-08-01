@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             onTap: () {
-              Get.to(DetailPage(index), arguments: '데이터');
+              Get.to(DetailPage(index), arguments: 'arguments 속성 테스트');
             },
             title: Text('제목$index'),
             leading: Text('$index')
