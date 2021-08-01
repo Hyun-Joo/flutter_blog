@@ -11,7 +11,7 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('Detail Page $id'),
+        child: Text('Detail Page ${id+1}'),
       )
     );
   }

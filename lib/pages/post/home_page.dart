@@ -17,8 +17,8 @@ class HomePage extends StatelessWidget {
             onTap: () {
               Get.to(DetailPage(index), arguments: 'arguments 속성 테스트');
             },
-            title: Text('제목$index'),
-            leading: Text('$index')
+            title: Text('제목${index+1}'),
+            leading: Text('${index+1}')
           );
         },
         separatorBuilder: (context, index) {
