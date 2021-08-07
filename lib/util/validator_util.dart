@@ -34,3 +34,25 @@ Function validateEmail() {
     return null;
   };
 }
+
+Function validateTitle() {
+  return (String? value) {
+    if (value!.isEmpty) {
+      return '제목을 입력해 주세요.';
+    } else if (value.length > 30) {
+      return '제목은 30자를 초과할 수 없습니다.';
+    }
+    return null;
+  };
+}
+
+Function validateContent() {
+  return (String? value) {
+    if (value!.isEmpty) {
+      return '내용을 입력해 주세요.';
+    } else if (value.length > 500) {
+      return '500자를 초과하여 입력할 수 없습니다.';
+    }
+    return null;
+  };
+}
