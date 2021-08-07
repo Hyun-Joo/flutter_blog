@@ -4,7 +4,6 @@ import 'package:flutter_blog/components/custom_text_form_field.dart';
 import 'package:flutter_blog/pages/user/login_page.dart';
 import 'package:flutter_blog/util/validator_util.dart';
 import 'package:get/get.dart';
-import 'package:validators/validators.dart';
 
 class JoinPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -53,6 +52,12 @@ class JoinPage extends StatelessWidget {
             funPageRoute: () {
               if(_formKey.currentState!.validate()) Get.to(LoginPage());
             }
+          ),
+          TextButton(
+              onPressed: () {
+                Get.to(LoginPage());
+              },
+              child: Text('이미 회원가입이 되어 있나요?')
           )
         ]
       )
