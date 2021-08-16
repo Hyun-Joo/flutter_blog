@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blog/view/pages/post/home_page.dart';
+import 'package:flutter_blog/view/pages/user/login_page.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       // 라우트 설계 불필요 (GetX 사용 예정)
-      home: HomePage()
+      home: LoginPage()
     );
   }
 }
